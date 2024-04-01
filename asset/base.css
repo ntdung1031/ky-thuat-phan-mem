@@ -1,0 +1,158 @@
+:root {
+    --header-height : 120px;
+    --nav-height: 36px;
+    --search-height: calc(var(--header-height) - var(--nav-height));
+    --color-pri: rgb(234,73,74);
+    --color: rgb(72,41,45);
+    --yelo-color: rgb(244,181,63);
+    --bg-color:rgb(240,234,218);
+    --text-color:rgb(106,82,97);
+    --head-color: #48292d ;
+}
+* {
+box-sizing: inherit;
+}
+html {
+    scroll-behavior: smooth;
+    font-size:62.5%;
+    line-height: 1.6rem;
+    /* font-family: "Truculenta", sans-serif; */
+    box-sizing: border-box;
+   background-color: var(--bg-color);   
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid {
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+ }
+/* test */
+.grid__column2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__column2-4 {
+    padding-left: 5px; 
+    padding-right: 5px;
+    width: 20%;
+
+}
+
+
+.grid__column33 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width:33.333333%
+}
+.grid__column10 {
+   
+    padding-left: 5px;
+    padding-right: 5px;
+    width:83.3334%;
+}
+
+
+
+ /* animation */
+ @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+ @keyframes growths {
+    from {
+        opacity: 0;
+       transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+ }
+ @keyframes fadeOn {
+    to {
+        opacity: 0;
+    }
+ }
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn  linear 0.2s;
+    
+    
+}
+ .modal-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+ }
+
+ .modal-body {
+    width: 500px;
+    /* height: 300px; */
+    background-color: white;
+    margin: auto; 
+    z-index: 1;
+    border-radius: 3px;
+    overflow: hidden;
+    animation: growths linear 0.2s;
+
+ }
+ 
+.return-form.pri-dk {
+background-color: #f53e2d ;
+color: white;
+
+}
+.return-form.pri-dk:hover {
+    background-color: #f53e2d;
+}
+.return-form {
+    /* css trong này sẽ áp dụng cả 2 nhưng ở trên thì chỉ 1 */
+    min-width: 142px;
+    height: 36px;
+    border:none;
+text-decoration: none;
+background-color: white;
+font-size: 1.6rem;
+padding: 0;
+cursor: pointer; 
+color: rgba(9, 9, 9, 0.8);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
