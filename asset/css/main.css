@@ -1,6 +1,6 @@
 .header {
     height: 90px;
-    background-color:var(--bg-color);
+    background-image: linear-gradient(rgb(246 234 199), rgb(225 223 215));
     position: fixed;
     z-index: 2;
     top: 0;
@@ -50,7 +50,9 @@
    transform: rotate(223deg);
 }
 
-
+.order-online-repon {
+    display: none;
+}
 
 
 /* tablet */
@@ -581,6 +583,10 @@ padding: 20px 22px;
 .upcoming-main-body {
     display: flex;
     overflow: scroll;
+    margin-top: 12px;
+}
+.upcoming-main-body::-webkit-scrollbar {
+    display: none;
 }
 .upcoming-content-heading {
     margin-bottom: 6px;
