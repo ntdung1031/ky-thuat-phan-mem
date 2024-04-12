@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhà hàng thái</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" href="./asset/icon/244634107_658741508424648_8060967603275718931_n.ico" type="image/x-icon"/>
+   <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- tailwindcss -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> 
     <link rel="stylesheet" href="./asset/css/base.css">
@@ -202,7 +203,7 @@
                             </nav>
                         </div>
                         <!-- Menu 1 -->
-                        <div class="food-menu  open">
+                        <div class="food-menu ">
                             <nav class="food-choise">
                                 <div class="food-info">
                                     <h2 class="food-choise-head">Chicken Tikka Masala</h2>
@@ -211,37 +212,15 @@
                                         simmered in a robust creamy sauce of tomatoes and cream.</p>
                                 </div>
 
-                                <div class="food-case">
-                                    <div class="food-btn-direction">
-                                        <button class="btn-direction-btn btn-left">
-                                            <i class="fa-solid fa-chevron-left food-btn-left"></i>
-                                        </button>
-
-                                        <button class="btn-direction-btn btn-right">
-                                            <i class="fa-solid fa-chevron-right food-btn-right"></i>
-
-                                        </button>
-                                        <div class="food-case-dot">
-                                            <button class="food-dot-open case-dot-all"></button>
-                                            <button class="case-dot-all"></button>
-                                            <button class="case-dot-all"></button>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
                             </nav>
-                            <div class="food-img">
-                                <img class="food-img1" src="./asset/img/65afe237c21508af2e8d8ed9_Chickentikka-p-800.png"
+                                <div class="food-img">
+                                <img class="food-img1 food-bora" src="./asset/img/65afe237c21508af2e8d8ed9_Chickentikka-p-800.png"
                                     alt="súp">
-                            </div>
+                                </div>
 
                         </div>
                         <!--  Menu 2 -->
-                        <div class="food-menu ">
+                        <div class="food-menu  ">
                             <nav class="food-choise">
                                 <div class="food-info">
                                     <h2 class="food-choise-head">Shrimp Thali</h2>
@@ -249,31 +228,9 @@
                                         soup, pickled radish salad, lentil crackers, rice, gulaab jamun.</p>
                                 </div>
 
-                                <div class="food-case">
-                                    <div class="food-btn-direction">
-                                        <button class="btn-direction-btn btn-left">
-                                            <i class="fa-solid fa-chevron-left food-btn-left"></i>
-                                        </button>
-
-                                        <button class="btn-direction-btn btn-right">
-                                            <i class="fa-solid fa-chevron-right food-btn-right"></i>
-
-                                        </button>
-                                        <div class="food-case-dot">
-                                            <button class=" case-dot-all"></button>
-                                            <button class="food-dot-open case-dot-all"></button>
-                                            <button class=" case-dot-all"></button>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
                             </nav>
                             <div class="food-img">
-                                <img class="food-img2" src="./asset/img/foodthai2.png" alt="súp">
+                                <img class="food-img2 food-bora" src="./asset/img/foodthai2.png" alt="súp">
                             </div>
 
                         </div>
@@ -287,39 +244,38 @@
                                         yellow lentil soup, cucumber salad, gulaab jamun</p>
                                 </div>
 
-                                <div class="food-case">
-                                    <div class="food-btn-direction">
-                                        <button class="btn-direction-btn btn-left">
-                                            <i class="fa-solid fa-chevron-left food-btn-left"></i>
-                                        </button>
-
-                                        <button class="btn-direction-btn btn-right">
-                                            <i class="fa-solid fa-chevron-right food-btn-right"></i>
-
-                                        </button>
-                                        <div class="food-case-dot">
-                                            <button class=" case-dot-all"></button>
-                                            <button class=" case-dot-all"></button>
-                                            <button class=" case-dot-all food-dot-open"></button>
-                                        </div>
-
-                                    </div>
-
-
-
-                                </div>
-
                             </nav>
                             <div class="food-img">
-                                <img class="food-img2" src="./asset/img/foodthai3.png" alt="súp">
+                                <img class="food-img2 food-bora" src="./asset/img/foodthai3.png" alt="súp">
                             </div>
 
                         </div>
+                        <!-- CASE -->
+                        <div class="food-case">
+                            <div class="food-btn-direction">
+                                <button class="btn-direction-btn btn-left" onclick="plusDivs(-1)">
+                                    <i class="fa-solid fa-chevron-left food-btn-left"></i>
+                                </button>
+
+                                <button class="btn-direction-btn btn-right" onclick="plusDivs(1)">
+                                    <i class="fa-solid fa-chevron-right food-btn-right"></i>
+
+                                </button>
+                                
+
+                            </div>
+
+                        </div> 
+                        
+                        <div class="food-case-dot">
+                            <button class="case-dot-all"></button>
+                            <button class="case-dot-all"></button>
+                            <button class="case-dot-all"></button>
+                        </div>
+
                     </div>
 
                     <div id="hours-location" class="hours-location ">
-
-
                        <div class="hours-location-container">
                            <span class="hours-head">Hours & locations</span>
                            <div class="add-info">
@@ -547,7 +503,7 @@
                                   <p class="upcoming-box-info-date">Date: 03/06 - 03/12</p>
   
                               </div>
-                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th. To celebrate, customers can enjoy a 20% discount on their entire order during this week.</p>
+                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th. To celebrate, customers can enjoy a 20% discount on their entire order during this week. </p>
   
                           </div>
   
@@ -561,7 +517,7 @@
                                   <p class="upcoming-box-info-date">Time: 11am - 9pm</p>
   
                               </div>
-                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th. To celebrate, customers can enjoy a 20% discount on their entire order during this week.</p>
+                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th. To celebrate, customers can enjoy a 20% discount on their entire order during this week. </p>
   
                           </div>
   
@@ -575,7 +531,7 @@
                                   <p class="upcoming-box-info-date">Time: 11am - 9pm</p>
   
                               </div>
-                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th. To celebrate, customers can enjoy a 20% discount on their entire order during this week.</p>
+                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th.</p>
   
                           </div>
   
@@ -590,7 +546,7 @@
                                   <p class="upcoming-box-info-date">Time: 11am - 9pm</p>
   
                               </div>
-                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th. To celebrate, customers can enjoy a 20% discount on their entire order during this week.</p>
+                              <p class="upcoming-box-info-para">Thaliwala is excited to announce its grand opening from March 6th to March 12th. </p>
   
                           </div>
   
@@ -906,7 +862,98 @@ form_thanks.addEventListener('submit',function() {
 })
    
 </script>
+<!-- cách 1 -->
+<!-- <script>
+    var slideIndex = 0;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("food-menu");
+      if (n >= x.length) {slideIndex = 0}
+      if (n < 0) {slideIndex = x.length-1;}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex].style.display = "flex";  
+    }
+</script> -->
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("food-menu");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "flex";  
+// dot
+      
+    var y = document.querySelectorAll('.case-dot-all')      
+      if(n>y.length) {slideIndex=1}
+      if(n<1) {slideIndex = y.length}
+      for(j=0; j<y.length;j++) {
+        y[j].style.background = "rgba(34, 34, 34, .4)";
+      }
+      y[slideIndex-1].style.background= "black";
+    }
+    
+   var dot = document.querySelectorAll('.case-dot-all')
+   var slide = document.querySelectorAll('.food-menu')
+
+//       for(i=0;i<dot.length;i++) {
+//     dot[i].onclick = function() {
+//         // for(j=0;slide.length;j++) {
+//         //     slide[j].style.display = "none";
+//         // }
+//         // slide[i].style.display = "flex";
+//         console.log(slide[i]);
+//     }
+//     console.log(dot[i])
+//    }
    
+    dot[0].onclick  = function() {
+        slide[0].style.display = "flex";
+        slide[1].style.display = "none";
+        slide[2].style.display = "none";
+        dot[0].style.background = "black";
+        dot[1].style.background = "rgba(34, 34, 34, .4)";
+        dot[2].style.background = "rgba(34, 34, 34, .4)";
+    }
+    dot[1].onclick  = function() {
+        slide[1].style.display = "flex";
+        slide[0].style.display = "none";
+        slide[2].style.display = "none";
+        dot[1].style.background = "black";
+        dot[0].style.background = "rgba(34, 34, 34, .4)";
+        dot[2].style.background = "rgba(34, 34, 34, .4)";
+    }
+    dot[2].onclick  = function() {
+        slide[2].style.display = "flex";
+        slide[0].style.display = "none";
+        slide[1].style.display = "none";
+        dot[2].style.background = "black";
+        dot[1].style.background = "rgba(34, 34, 34, .4)";
+        dot[0].style.background = "rgba(34, 34, 34, .4)";
+    }
+        
+                
+            
+        
+    
+</script>
+    
     
 
 

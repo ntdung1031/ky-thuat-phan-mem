@@ -138,6 +138,7 @@ cursor: pointer;
 color: rgba(9, 9, 9, 0.8);
    
 }
+::-webkit-input-placeholder { line-height: normal; }
 
 
 
