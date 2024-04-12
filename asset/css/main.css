@@ -130,6 +130,7 @@ margin-left: 20px;
     margin-top: 110px;
 }
 .food-introduce-head {
+    margin: 0;
     padding: 6px 0;
     font-size: 8rem;
     color: var(--color-pri);
