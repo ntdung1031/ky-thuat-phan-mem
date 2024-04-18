@@ -13,6 +13,7 @@
 box-sizing: inherit;
 }
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     font-size:62.5%;
     line-height: 1.6rem;
@@ -60,12 +61,39 @@ html {
     width:83.3334%;
 }
 
+/* width */
+/* ::-webkit-scrollbar {
+    width: 10px;
+  } */
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  } */
+  
+  /* Handle */
+  /* ::-webkit-scrollbar-thumb {
+    background: #888;
+  } */
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } */
 
 
  /* animation */
  @keyframes fadeIn {
     from {
         opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+ @keyframes fadeIn2 {
+    from {
+        opacity: 0.5;
     }
     to {
         opacity: 1;
@@ -79,6 +107,16 @@ html {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+ }
+ @keyframes grow {
+    from {
+        opacity: 0;
+       transform: translateY(0)
+    }
+    to {
+        opacity: 1;
+        transform:translateY(100%)
     }
  }
  @keyframes fadeOn {

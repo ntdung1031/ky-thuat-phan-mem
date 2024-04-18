@@ -38,7 +38,10 @@ align-items: center;
     margin-bottom: 28px;
 
 }
-
+.vegetarian-pri-icon {
+    width: 95px !important;
+    height: 35px !important;
+}
 .head-menu-container-text {
     font-size: 1.8rem;
     margin-left: 12px;

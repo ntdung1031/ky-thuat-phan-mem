@@ -26,7 +26,7 @@
     <!-- byet.host, somee,https://vn.000webhost.com/ -->
     <!-- https://thaliwala-343edc0c9a65c9df24bc4d62fb04f.webflow.io/ -->
     <!-- word-wrap: break-word; -->
-    <div class="main">
+    <div class="main" translate="no">
         <!-- header -->
         <header class="header">
             <div class="grid grid-header-pri">
@@ -467,7 +467,7 @@
                 <div class="event-right-container">
                     <form action="" method="dialog" id="js-form" class="">
                         <input type="text" class="name-evenat-continer cc-12" placeholder="Enter your name" required>
-                        <input type="text" class="email-event-container cc-12" placeholder="Enter your email address" required>
+                        <input type="email" class="email-event-container cc-12" placeholder="Enter your email address" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
                         <textarea name="description" id="description" cols="60" rows="10" class="description-event" placeholder="Add some description related to your event, number of people and dates.Example Text"></textarea>
                         <input type="submit" class="btn-event " value="SEND" data-wait="wait">
                     </form>
@@ -752,8 +752,8 @@
                                     <div class="grid-column-form ">
                                         <form action="" method="dialog" id="js-form-contact" class="">
                                             <h1 class="contact-form-head">Email address</h1>
-                                            <input type="email" class="contact-form-mail" placeholder="Email address goes here" required>
-                                            <input type="submit" value="sign up" class="contact-form-btn"></input>
+                                            <input type="email" class="contact-form-mail" placeholder="Email address goes here" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+                                            <input type="submit" value="sign up" class="contact-form-btn" />
     
                                         </form>
     
