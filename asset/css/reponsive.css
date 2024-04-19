@@ -8,9 +8,7 @@
     /* .main {
         overflow: hidden;
     } */
-body {
-    overflow: hidden;
-}
+
     .grid__full-width {
         width: 100%;
     }
@@ -199,7 +197,8 @@ body {
     flex-direction: column;
     padding: 50px 20px 20px;
     }
-    .nav-head-item {margin: 20px 0;
+    .nav-head-item {
+        margin: 20px 0;
         width: 100%;
         text-align: center;
         
@@ -257,8 +256,6 @@ body {
         height: 30px;
     }
     /* order-online */
-
-
 
     .body-container-main {
         margin-top: 0;
@@ -325,9 +322,7 @@ body {
         width: 103vw;
         left: -5px;
     }
-    .hours-location  {
-
-    }
+   
     .hours-head {
         display: block;
         line-height: 55px;
@@ -361,9 +356,6 @@ body {
     }
     .img-info-shar {
         padding: 30% 0;
-    }
-
-    .upcoming-box-date-time {
     }
     .lot-info-link-btn {
         padding: 12px 20px;
@@ -494,6 +486,10 @@ body {
     .contact-column-pri {
         margin-bottom: 30px;
     }
+    .grid__row-pri-menu-body {
+        width: 100%;
+        margin: 0;
+    }
     .grid-column3-pri {
         padding: 0;
     }
@@ -504,6 +500,7 @@ body {
         font-size: 1.9rem;
         line-height: 26px;
     }
+    
     .contact-form-head {
         font-size: 2.2rem;
         margin: 12px 0  ;
@@ -560,6 +557,7 @@ body {
     .choise-menu {
         height: unset;
         margin: 4px 0;
+        top: var(--hei-head-mobi);
     }
     .choise-menu-selector {
         width: 100%;
@@ -864,6 +862,7 @@ body {
 .header {
     height: var(--hei-head-tab);
 }
+
 .nav-link-logo {
     margin-left: 20px;
 }
