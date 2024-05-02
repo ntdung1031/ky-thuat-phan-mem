@@ -305,6 +305,7 @@
 .food-choise-head {
     font-size: 3.6rem;
     width: unset;
+    letter-spacing: 2px;
 }
 .food-btn-direction {
     top: 42px;
@@ -317,6 +318,8 @@
 }
 .food-intruduce-btn {
     margin-left: 10px;
+    height: 55px;
+    width: 200px;
 }
     .food-marque {
         width: 103vw;
@@ -447,7 +450,7 @@
         height: 100%;
     }
     .upcoming-main-box {
-        width: 70vw;
+        width: 65vw;
         flex-direction: column;
         height: 100%;
         padding-bottom: 6px;
@@ -553,6 +556,9 @@
     }
     .grid-menu-item {
         margin-bottom: 40px;
+    }
+    .menu-container-img {
+        padding-top: 60%;
     }
     .choise-menu {
         height: unset;
@@ -1070,6 +1076,9 @@ height: 65px;
 }
 .menu-container-text{
 height: 240px;
+}
+.menu-container-head {
+    font-size: 3.2rem;
 }
 .grid-menu-item {
     margin-bottom: 40px;
