@@ -204,7 +204,7 @@
         
     }
     .nav-head-link {
-        font-size: 4rem;
+        font-size: 3.8rem;
         line-height: 40px;
         display: block;
         font-weight: 900;
@@ -614,14 +614,17 @@
         margin: 0;
     }
     .about-head-container {
-        margin: 40px 0;
+        margin:50px 0 40px 0;
+    }
+    .head-container {
+        font-size: 4rem;
+        line-height: 40px;
+        width: 95%;
     }
     .about-iner-para-four {
         margin: 0;
     }
-    .about-head-container {
-        margin-top: 50px;
-    }
+  
     .owner-head {
         font-size: 3.4rem;
     }
@@ -904,8 +907,8 @@ padding: 80px 20px 20px;
     border-radius: 50px;
 }
 .nav-head-link-order svg {
-    width: 50px; 
-    height: 50px;
+    width: 46px; 
+    height: 46px;
     margin-left: 20px;
 }
 .food {

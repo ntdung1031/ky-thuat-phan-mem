@@ -92,9 +92,9 @@
     color: var(--text-color);
     -webkit-tap-highlight-color: transparent;
 }
-.nav-head-item-primary {
+/* .nav-head-item-primary {
     color:var(--color-pri);
-}
+} */
 .nav-head-item-order {
     border: 2px solid var(--color-pri);
     border-radius: 20px;
@@ -610,7 +610,7 @@ height: 10px;
 .upcoming-main-body::-webkit-scrollbar-track {
     background: #e1e0e0;
     border-radius: 10px;
-  }
+}
   .upcoming-main-body::-webkit-scrollbar-thumb {
     background-color: rgba(166, 165, 165,0.4);
     border-radius: 10px;

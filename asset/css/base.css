@@ -18,7 +18,7 @@ html {
     scroll-behavior: smooth;
     font-size:62.5%;
     line-height: 1.6rem;
-    /* font-family: "Truculenta", sans-serif; */
+    font-family: "gstatic",sans-serif;
     box-sizing: border-box;
    background-color: var(--bg-color);   
 }
