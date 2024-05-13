@@ -878,6 +878,10 @@ padding: 8px 12px;
 border-radius: 12px;
 border: none;
 }
+.contact-form-mail:invalid:not(:placeholder-shown){
+    border: 1px solid red;
+    outline: none;
+}
 .form-end:has(:invalid:not(:placeholder-shown)) .error {
     display: block;
 }
