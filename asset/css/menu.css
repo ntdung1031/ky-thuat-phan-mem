@@ -27,7 +27,7 @@ align-items: center;
 }
 .body-head-menu-container {
     display: flex;
-    grid-column-gap: 100px;
+    grid-column-gap: 40px;
     justify-content: space-between;
     
 
@@ -185,3 +185,6 @@ width: 90px;
 .open-flex {
     display: flex;
 }
+/* .form-end:has(:invalid:not(:placeholder-shown)) .error {
+    display: block;
+} */

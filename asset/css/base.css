@@ -22,6 +22,9 @@ html {
     box-sizing: border-box;
    background-color: var(--bg-color);   
 }
+.header .grid {
+    max-width: calc(100% - 20px);
+}
 .grid__full-width {
     width: 100%;
 }
