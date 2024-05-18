@@ -70,6 +70,27 @@
     width: 288px;
     height: 53px;
 }
+.nav-header-order {
+    
+}
+.sign {
+    display: flex;
+}
+.sign button {
+    font-size: 2rem;
+    padding: 11.5px 14px;
+    line-height: 17px;
+    border-radius: 10px;
+}
+.sign-in {
+}
+.sign-up {
+    background-color: var(--yelo-color);
+}
+.sign-up:hover {
+    opacity: 0.8;
+}
+
 
 .nav-head-list {
     display: flex;
@@ -100,7 +121,8 @@
 
 }
 .nav-head-link-order {
-    padding:12px 10px ;
+    max-height: 40px;
+    padding:10px 10px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -878,6 +900,10 @@ padding: 8px 12px;
 border-radius: 12px;
 border: none;
 }
+.contact-form-mail:focus {
+    border: 1px solid #3898ec;
+    outline: none;
+}
 .contact-form-mail:invalid:not(:placeholder-shown){
     border: 1px solid red;
     outline: none;
@@ -897,10 +923,7 @@ color: #fff;
 cursor: pointer;
 
 }
-.contact-form-mail:focus {
-    border: 1px solid #3898ec;
-    outline: none;
-}
+
 .grid-colmun-thanks {
     text-align: center;
     font-size: 3.2rem;
@@ -919,12 +942,6 @@ cursor: pointer;
     margin: 0 0 70px 0;
 
 }
-.footer-section-left {
-
-}
-.footer-section-right {
-
-}
 .section-right-link {
     text-decoration: none;
     color: var(--bg-color);
@@ -936,6 +953,11 @@ cursor: pointer;
     font-weight: 400;
 
 }
+.modal {
+    
+}
+
+
 /*  bật tắt */
     /* **************************************************** */
 /* form home */
@@ -947,6 +969,7 @@ cursor: pointer;
     display: block;
     
 }
+
 
 
 

@@ -75,7 +75,7 @@ z-index: 1;
 }
 .choise-menu-pri {
     text-decoration: none;
-    
+    max-height: 51px;
     color: var(--bg-color);
     font-size: 2.2rem;
     background-color: rgb(72,41,45);
@@ -99,6 +99,7 @@ z-index: 1;
 color: var(--bg-color) !important;
 text-decoration: none;
 display: flex;
+align-items: center;
 }
 /* body menu-container */
 .grid__row-pri-menu-body {

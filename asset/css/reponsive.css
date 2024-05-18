@@ -13,7 +13,7 @@
         width: 100%;
     }
 
-    .grid {
+    .grid-lay {
         width: 1200px;
         max-width: 100%;
         margin: 0 auto;
@@ -224,6 +224,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 50px;
+        max-height: unset;
     }
     .nav-head-link-order svg {
         width: 50px; 
@@ -717,7 +718,7 @@
         width: 100%;
     }
 
-    .grid {
+    .grid-lay {
         width: 1200px;
         max-width: 100%;
         margin: 0 auto;
@@ -746,18 +747,18 @@
 
     }
 
-.m-0 {
+.mb-0 {
         display: none;
     }
 
 
-.m-1 {
+.mb-1 {
         display: block;
         flex: 0 0 8.33333%;
         max-width: 8.33333%;
     }
 
-.m-2 {
+.mb-2 {
         display: block;
 
         flex: 0 0 16.66667%;
@@ -765,61 +766,61 @@
 
     }
 
-.m-3 {
+.mb-3 {
         display: block;
         flex: 0 0 25%;
         max-width: 25%;
     }
 
-.m-4 {
+.mb-4 {
         display: block;
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
     }
 
-.m-5 {
+.mb-5 {
         display: block;
         flex: 0 0 41.66667%;
         max-width: 41.66667%;
     }
 
-.m-6 {
+.mb-6 {
         display: block;
         flex: 0 0 50%;
         max-width: 50%;
     }
 
-.m-7 {
+.mb-7 {
         display: block;
         flex: 0 0 58.33333%;
         max-width: 58.33333%;
     }
 
-.m-8 {
+.mb-8 {
         display: block;
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
 
-.m-9 {
+.mb-9 {
         display: block;
         flex: 0 0 75%;
         max-width: 75%;
     }
 
-.m-10 {
+.mb-10 {
         display: block;
         flex: 0 0 83.33333%;
         max-width: 83.33333%;
     }
 
-.m-11 {
+.mb-11 {
         display: block;
         flex: 0 0 91.66667%;
         max-width: 91.66667%;
     }
 
-.m-12 {
+.mb-12 {
         display: block;
         flex: 0 0 100%;
         max-width: 100%;
@@ -911,6 +912,7 @@ padding: 80px 20px 20px;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
+    max-height: unset;
 }
 .nav-head-link-order svg {
     width: 46px; 
@@ -1202,7 +1204,7 @@ height: 240px;
         width: 100%;
     }
 
-    /* .grid {
+    /* .grid-lay {
         width: 1400px;
         max-width: 100%;
         margin: 0 auto;
@@ -1355,3 +1357,10 @@ height: 240px;
         width: 42vw;
     }
 }
+@media (min-width:1540px) {
+    .grid-lay {
+        width: 1500px;
+    }
+}
+
+
