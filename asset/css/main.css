@@ -71,7 +71,7 @@
     height: 53px;
 }
 .nav-header-order {
-    
+    display: flex;
 }
 .sign {
     display: flex;
