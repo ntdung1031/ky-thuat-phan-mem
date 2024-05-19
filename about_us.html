@@ -32,31 +32,26 @@
 <body>
     <div class="main" translate="no">
         <header class="header">
-            <div class="grid grid-header-pri">
+            <div class="grid-lay grid-header-pri">
                 <nav class="navbar">
                     <a href="./" class="nav-link-logo">
                         <img src="./asset/img/65b58991efbe0d22e17075a7_thali-logo.svg" alt="logo-page"
                             class="nav-logo-img">
                     </a>
                     <div class="nav-header-order">
-                        <ul class="nav-head-list">
-
+                        <ul class="nav-head-list nav-head-list-main">
                             <li class="nav-head-item ">
                                 <a href="./" class="nav-head-link ">Home</a>
                             </li>
-
                             <li class="nav-head-item">
                                 <a href="./menu.html" class="nav-head-link ">Menu</a>
                             </li>
-
                             <li class="nav-head-item">
                                 <a href="./index.html#hours-location" class="nav-head-link">Hours</a>
                             </li>
-
                             <li class="nav-head-item">
                                 <a href="" class="nav-head-link nav-head-item-primary">About Us</a>
                             </li>
-
                             <li class="nav-head-item nav-head-item-order">
                                 <a href="" class="nav-head-link nav-head-link-order ">
                                     Order online
@@ -70,13 +65,11 @@
                                 </a>
 
                             </li>
-
-
                         </ul>
-
-
-
-
+                        <div class="sign flex gap-1 items-center">
+                            <button class="sign-in">Sign In</button>
+                            <button class="sign-up">Sign Up</button>
+                        </div>
                     </div>
                     <!-- reponsive -->
                     <input type="checkbox" name="" id="check-menu" class="check-menu-header">
@@ -135,7 +128,7 @@
             </div>
         </header>
 
-        <div class="grid grid-about">
+        <div class="grid-lay grid-about">
             <div class="about-iner ">
                 <div class="about-iner-img" style="background-image: url(./asset/img/gorkha.jpg);"></div>
                 <div class="about-iner-text ">
@@ -254,7 +247,7 @@
         </div>
 
         <div class="footer-contact">
-            <div class="grid grid-pri">
+            <div class="grid-lay grid-pri">
 
                 <div class="footer-contact-head">
                     <a href="" class="footer-head-link">
@@ -441,7 +434,7 @@
                             <div class="grid-coumn-formmain-body">
                                 <h1 class="grid-column-formmain-head">Sign up For our news letter with your email
                                     address to receive news, updates and promotions.</h1>
-                                <div class="grid-column-form ">
+                                <div class="grid-column-form">
                                     <form action="" method="dialog" id="js-form-contact" class="form-end">
                                         <h1 class="contact-form-head">Email address</h1>
                                         <input type="email" class="contact-form-mail"
@@ -453,7 +446,7 @@
                                     </form>
 
                                 </div>
-                                <div class="grid-colmun-thanks  ">Thank you for joining our newsletter.</div>
+                                <div class="grid-colmun-thanks">Thank you for joining our newsletter.</div>
 
                             </div>
 
@@ -483,20 +476,107 @@
 
         </div>
 
+        <!--  form sign IN -->
+        <div class="modal " style="display: none;">
+            <div class="modal-lay">
+                <div class="modal-sign-in-main modal-body">
+                    <i class="fa-solid fa-xmark close-form"></i>
+                    <img src="./asset/img/65b58991efbe0d22e17075a7_thali-logo.svg" alt="" class="sign-in-img">
+                    <h2 class="modal-signIn-title">Hello Again!</h2>
+                    <p class="modal-signIn-para">Welcome back to sign in. As a returning customer, you have access to
+                        your previously saved all information.</p>
+                    <form action="" class="form auth-form">
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="email" name="" class="form-input" placeholder="Email" required
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                                <img src="./asset/img/message.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Email is not in correct format</p>
+                        </div>
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="password" name="" class="form-input" placeholder="Password" minlength="6"
+                                    required>
+                                <img src="./asset/img/lock.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Password must be at least 6 characters</p>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="" id="checked-label" hidden>
+                            <label for="checked-label">Set as default card</label>
+                            <a href="#!" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn-sign-in">Sign In</button>
+                        <div class="signIn-gg">
+                            <img src="./asset/img/google.svg" alt="" class="gg">
+                            <p class="gg-desc">Sign in with Google</p>
+                        </div>
+
+                    </form>
+
+                    <p class="dont-SignIn">Don’t have an account yet? <a href="#!">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- form signUp -->
+        <div class="modal " style="display: none;">
+            <div class="modal-lay">
+                <div class="modal-sign-in-main modal-body">
+                    <i class="fa-solid fa-xmark close-form"></i>
+                    <img src="./asset/img/65b58991efbe0d22e17075a7_thali-logo.svg" alt="" class="sign-in-img">
+                    <h2 class="modal-signIn-title">Sign Up</h2>
+                    <p class="modal-signIn-para">Let’s create your account and Shop like a pro and save money.</p>
+                    <form action="" class="form auth-form">
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="email" name="" class="form-input" placeholder="Email" required
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                                <img src="./asset/img/message.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Email is not in correct format</p>
+                        </div>
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="password" name="" class="form-input" placeholder="Password" minlength="6"
+                                    required>
+                                <img src="./asset/img/lock.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Password must be at least 6 characters</p>
+                        </div>
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="password" name="" class="form-input" placeholder="Confirm password"
+                                    minlength="6" required>
+                                <img src="./asset/img/lock.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Password must be at least 6 characters</p>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="" id="checked-label-sign-up" hidden>
+                            <label for="checked-label-sign-up">Set as default card</label>
+                            <a href="#!" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn-sign-in">Sign In</button>
+                        <div class="signIn-gg">
+                            <img src="./asset/img/google.svg" alt="" class="gg">
+                            <p class="gg-desc">Sign in with Google</p>
+                        </div>
+
+                    </form>
+
+                    <p class="dont-SignIn">Don’t have an account yet? <a href="#!">Sign In</a></p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        var form_thanks = document.getElementById('js-form-contact')
-        // var main = document.querySelector('.grid-column-form')
-        var thanks = document.querySelector('.grid-colmun-thanks')
-
-        form_thanks.addEventListener('submit', function () {
-            form_thanks.classList.add('close')
-            thanks.classList.add('open')
-        })
-
-    </script>
-    <script src="./js/js.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 

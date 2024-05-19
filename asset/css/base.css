@@ -64,7 +64,21 @@ html {
     padding-right: 5px;
     width:83.3334%;
 }
-
+/* sign btn */
+.sign button {
+    font-size: 2rem;
+    padding: 11.5px 14px;
+    line-height: 17px;
+    border-radius: 10px;
+}
+.sign-in {
+}
+.sign-up {
+    background-color: var(--yelo-color);
+}
+.sign-up:hover {
+    opacity: 0.8;
+}
 /* modal */
 .modal {
     position: fixed;
@@ -109,6 +123,8 @@ html {
 .sign-in-img {
     width: 200px;
     height: unset;
+    user-select: none;
+    cursor: pointer;
  }
 
 .modal-signIn-title {

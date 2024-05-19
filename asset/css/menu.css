@@ -87,6 +87,9 @@ z-index: 1;
     cursor: pointer;
     border-color: var(--yelo-color);
     color: var(--yelo-color);
+}
+.choise-menu-pri:hover svg {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(70%) saturate(815%) hue-rotate(328deg) brightness(101%) contrast(91%);
 
 }
 .choise-menu-selector-link {
@@ -96,7 +99,7 @@ z-index: 1;
 
 
 .choise-takeout-link {
-color: var(--bg-color) !important;
+color: var(--bg-color) ;
 text-decoration: none;
 display: flex;
 align-items: center;
@@ -105,6 +108,7 @@ align-items: center;
 .grid__row-pri-menu-body {
     margin-left: -9px;
     margin-right: -9px;
+    animation: fadeIn linear 0.3s;
 }
 .row-pri-menu-item {
     display: flex;
@@ -189,3 +193,12 @@ width: 90px;
 /* .form-end:has(:invalid:not(:placeholder-shown)) .error {
     display: block;
 } */
+/* fix after checkbox */
+.form-check label::after {
+    top: 4px;
+}
+
+
+
+
+

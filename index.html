@@ -39,7 +39,7 @@
                             class="nav-logo-img">
                     </a>
                     <div class="nav-header-order items-center gap-4 ">
-                        <ul class="nav-head-list">
+                        <ul class="nav-head-list nav-head-list-main">
                             <li class="nav-head-item ">
                                 <a href="#" class="nav-head-link nav-head-item-primary">Home</a>
                             </li>
@@ -66,12 +66,10 @@
 
                             </li>
                         </ul>
-
                         <div class="sign flex gap-1 items-center">
                             <button class="sign-in">Sign In</button>
                             <button class="sign-up">Sign Up</button>
                         </div>
-
                     </div>
 
                     <!-- dấu reponsive -->
@@ -465,11 +463,9 @@
                             placeholder="Add some description related to your event, number of people and dates.Example Text"></textarea>
                         <input type="submit" class="btn-event " value="SEND" data-wait="wait">
                     </form>
-
                     <div class="thank-send js-send close ">
                         <span class="para-thank">Thank you! Your submission has been received!</span>
                     </div>
-
 
                 </div>
 
@@ -788,8 +784,6 @@
 
                 </div>
 
-
-
             </div>
 
         </div>
@@ -894,170 +888,8 @@
         </div>
 
     </div>
-
-    <!-- // chọn tp hcm, nha trang hay hà nội -->
-    <script>
-        var btn1 = document.querySelector('.btn-thaili');
-        var btn2 = document.querySelector('.btn-gorkha');
-        var btn3 = document.querySelector('.btn-momo');
-        var body1 = document.querySelector('.js-body-info1');
-        var body2 = document.querySelector('.js-body-info2');
-        var body3 = document.querySelector('.js-body-info3');
-
-        btn1.addEventListener('click', function () {
-            btn1.classList.add('open-hours')
-            btn2.classList.remove('open-hours')
-            btn3.classList.remove('open-hours')
-
-            body1.classList.add('open')
-            body2.classList.remove('open')
-            body3.classList.remove('open')
-
-        })
-        btn2.addEventListener('click', function () {
-            btn2.classList.add('open-hours')
-            btn1.classList.remove('open-hours')
-            btn3.classList.remove('open-hours')
-
-            body2.classList.add('open')
-            body1.classList.remove('open')
-            body3.classList.remove('open')
-        })
-        btn3.addEventListener('click', function () {
-            btn3.classList.add('open-hours')
-            btn1.classList.remove('open-hours')
-            btn2.classList.remove('open-hours')
-
-            body3.classList.add('open')
-            body1.classList.remove('open')
-            body2.classList.remove('open')
-        })
-    </script>
-    <!--  // cái này làm cái form bự  -->
-    <script>
-
-
-        var btn_send = document.querySelector('.btn-event')
-        var form = document.getElementById('js-form')
-        var send = document.querySelector('.js-send')
-
-        form.addEventListener('submit', function () {
-            form.classList.add('close')
-
-            send.classList.add('open')
-            // alert('ccc');
-        })
-        //     btn_send.onlick = function() {
-        //     form.classList.add('close')
-        // https://freetuts.net/su-kien-submit-form-trong-javascript-3417.html
-
-        //    } 
-    </script>
-
-    <!-- form nhỏ -->
-    <script>
-        var form_thanks = document.getElementById('js-form-contact')
-        // var main = document.querySelector('.grid-column-form')
-        var thanks = document.querySelector('.grid-colmun-thanks')
-
-        form_thanks.addEventListener('submit', function () {
-            form_thanks.classList.add('close')
-            thanks.classList.add('open')
-        })
-
-    </script>
-    <!-- cách 1 -->
-    <!-- <script>
-    var slideIndex = 0;
-    showDivs(slideIndex);
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("food-menu");
-      if (n >= x.length) {slideIndex = 0}
-      if (n < 0) {slideIndex = x.length-1;}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      x[slideIndex].style.display = "flex";  
-    }
-</script> -->
-    <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("food-menu");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "flex";
-            // dot
-
-            var y = document.querySelectorAll('.case-dot-all')
-            if (n > y.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = y.length }
-            for (j = 0; j < y.length; j++) {
-                y[j].style.background = "rgba(34, 34, 34, .4)";
-            }
-            y[slideIndex - 1].style.background = "black";
-        }
-
-        var dot = document.querySelectorAll('.case-dot-all')
-        var slide = document.querySelectorAll('.food-menu')
-
-        //       for(i=0;i<dot.length;i++) {
-        //     dot[i].onclick = function() {
-        //         // for(j=0;slide.length;j++) {
-        //         //     slide[j].style.display = "none";
-        //         // }
-        //         // slide[i].style.display = "flex";
-        //         console.log(slide[i]);
-        //     }
-        //     console.log(dot[i])
-        //    }
-
-        dot[0].onclick = function () {
-            slide[0].style.display = "flex";
-            slide[1].style.display = "none";
-            slide[2].style.display = "none";
-            dot[0].style.background = "black";
-            dot[1].style.background = "rgba(34, 34, 34, .4)";
-            dot[2].style.background = "rgba(34, 34, 34, .4)";
-        }
-        dot[1].onclick = function () {
-            slide[1].style.display = "flex";
-            slide[0].style.display = "none";
-            slide[2].style.display = "none";
-            dot[1].style.background = "black";
-            dot[0].style.background = "rgba(34, 34, 34, .4)";
-            dot[2].style.background = "rgba(34, 34, 34, .4)";
-        }
-        dot[2].onclick = function () {
-            slide[2].style.display = "flex";
-            slide[0].style.display = "none";
-            slide[1].style.display = "none";
-            dot[2].style.background = "black";
-            dot[1].style.background = "rgba(34, 34, 34, .4)";
-            dot[0].style.background = "rgba(34, 34, 34, .4)";
-        }
-
-
-
-
-
-    </script>
-    <script src="./js/js.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

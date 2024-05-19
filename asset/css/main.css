@@ -59,6 +59,7 @@
     height: 100%; 
 }
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,29 +70,12 @@
 .nav-logo-img {
     width: 288px;
     height: 53px;
+    cursor: pointer;
+    user-select: none;  
 }
 .nav-header-order {
     display: flex;
 }
-.sign {
-    display: flex;
-}
-.sign button {
-    font-size: 2rem;
-    padding: 11.5px 14px;
-    line-height: 17px;
-    border-radius: 10px;
-}
-.sign-in {
-}
-.sign-up {
-    background-color: var(--yelo-color);
-}
-.sign-up:hover {
-    opacity: 0.8;
-}
-
-
 .nav-head-list {
     display: flex;
     align-items: center;
@@ -376,7 +360,7 @@ transition: padding linear 0.4s;
 /* body info */
 .body-info {
     display: none;
-padding: 32px 24px;
+padding: 15px 24px 34px;
 flex: 1;
 background-color: var(--yelo-color);
 border-bottom-left-radius: 80px;
@@ -392,6 +376,8 @@ display: flex;
     background-size: cover;
     padding-top: 100%;
     padding: 0 207px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .top-info-img {
     width: 100%;
@@ -401,11 +387,13 @@ display: flex;
     background-color: white;
     padding: 30px 22px;
     display: flex;
-flex-direction: column;
-line-height: 22px;
-width: 50%;
-align-items: flex-start;
-padding: 12px 0 15.9px 17px;;
+    flex-direction: column;
+    line-height: 22px;
+    width:50%;
+    align-items: flex-start;
+    padding: 12px 0 15.9px 17px;;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .lot-info-head {
 font-size: 32px;
@@ -416,7 +404,8 @@ margin-bottom: 20px;
 line-height: 32px;
 }
 .lot-info-head-pri-thaili {
-    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: -2px;
 }
 .img-info1-pri {
     padding: 0 198px;
@@ -444,13 +433,19 @@ color: var(--color-pri);
 }
 .lot-info-link-btn {
     text-decoration: none;
-    padding: 25px 32px;
+    padding: 20px 30px;
     border: 2px solid var(--text-color);
     border-radius: 40px;
     color: #48292d;
     font-size: 2rem;
     font-weight: 300;
     margin: 12px 0 20px 0 ;
+    transition: all linear 0.2s;
+}
+.lot-info-link-btn:hover {
+    border-color: var(--yelo-color);
+    color: var(--yelo-color);
+    font-weight: 500;
 }
 .bot-info {
     display: flex;
@@ -520,6 +515,10 @@ flex: 1;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+.event-right-container form input::placeholder,
+.event-right-container form textarea::placeholder {
+    font-size: 1.6rem;
 }
 .name-evenat-continer {
 width: 33%;
@@ -928,10 +927,10 @@ cursor: pointer;
     text-align: center;
     font-size: 3.2rem;
     line-height: 50px;
-    padding: 35px 44px;
+    padding: 25px 38px;
     display: none;
     animation: fadeIn linear 1s;
-    
+    font-weight: 600;
 }
 .footer-section {
     display: flex;

@@ -24,21 +24,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
         rel="stylesheet">
-
+    <!-- link js -->
+    <script src="./js/js.js"></script>
 </head>
 
 <body>
     <div class="main" translate="no">
 
         <header class="header">
-            <div class="grid grid-header-pri">
+            <div class="grid-lay grid-header-pri">
                 <nav class="navbar">
                     <a href="/" class="nav-link-logo">
                         <img src="./asset/img/65b58991efbe0d22e17075a7_thali-logo.svg" alt="logo-page"
                             class="nav-logo-img">
                     </a>
                     <div class="nav-header-order">
-                        <ul class="nav-head-list">
+                        <ul class="nav-head-list nav-head-list-main">
 
                             <li class="nav-head-item ">
                                 <a href="./index.html" class="nav-head-link ">Home</a>
@@ -72,10 +73,10 @@
 
 
                         </ul>
-
-
-
-
+                        <div class="sign flex gap-1 items-center">
+                            <button class="sign-in">Sign In</button>
+                            <button class="sign-up">Sign Up</button>
+                        </div>
                     </div>
                     <!-- reponsive -->
                     <input type="checkbox" name="" id="check-menu" class="check-menu-header">
@@ -259,7 +260,7 @@
             </div>
         </div>
 
-        <div class="grid grid-body" id="grid-body">
+        <div class="grid-lay grid-body" id="grid-body">
             <div class="grid__row grid__row-pri-menu-body js-all  ">
                 <div class="grid__column33 grid-menu-item mb-6 c-12">
                     <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu1.jpeg);"
@@ -506,7 +507,7 @@
         </div>
 
         <div class="footer-contact">
-            <div class="grid grid-pri">
+            <div class="grid-lay grid-pri">
 
                 <div class="footer-contact-head">
                     <a href="" class="footer-head-link">
@@ -726,54 +727,114 @@
                         </a>
                         POWERED BY WEBFLOW.
                     </div>
-
                 </div>
-
-
-
             </div>
-
         </div>
 
+        <!--  form sign IN -->
+        <div class="modal " style="display: none;">
+            <div class="modal-lay">
+                <div class="modal-sign-in-main modal-body">
+                    <i class="fa-solid fa-xmark close-form"></i>
+                    <img src="./asset/img/65b58991efbe0d22e17075a7_thali-logo.svg" alt="" class="sign-in-img">
+                    <h2 class="modal-signIn-title">Hello Again!</h2>
+                    <p class="modal-signIn-para">Welcome back to sign in. As a returning customer, you have access to
+                        your previously saved all information.</p>
+                    <form action="" class="form auth-form">
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="email" name="" class="form-input" placeholder="Email" required
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                                <img src="./asset/img/message.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Email is not in correct format</p>
+                        </div>
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="password" name="" class="form-input" placeholder="Password" minlength="6"
+                                    required>
+                                <img src="./asset/img/lock.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Password must be at least 6 characters</p>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="" id="checked-label" hidden>
+                            <label for="checked-label">Set as default card</label>
+                            <a href="#!" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn-sign-in">Sign In</button>
+                        <div class="signIn-gg">
+                            <img src="./asset/img/google.svg" alt="" class="gg">
+                            <p class="gg-desc">Sign in with Google</p>
+                        </div>
 
+                    </form>
 
+                    <p class="dont-SignIn">Don’t have an account yet? <a href="#!">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- form signUp -->
+        <div class="modal " style="display: none;">
+            <div class="modal-lay">
+                <div class="modal-sign-in-main modal-body">
+                    <i class="fa-solid fa-xmark close-form"></i>
+                    <img src="./asset/img/65b58991efbe0d22e17075a7_thali-logo.svg" alt="" class="sign-in-img">
+                    <h2 class="modal-signIn-title">Sign Up</h2>
+                    <p class="modal-signIn-para">Let’s create your account and Shop like a pro and save money.</p>
+                    <form action="" class="form auth-form">
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="email" name="" class="form-input" placeholder="Email" required
+                                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                                <img src="./asset/img/message.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Email is not in correct format</p>
+                        </div>
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="password" name="" class="form-input" placeholder="Password" minlength="6"
+                                    required>
+                                <img src="./asset/img/lock.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Password must be at least 6 characters</p>
+                        </div>
+                        <div class="group-form">
+                            <div class="form-text-input">
+                                <input type="password" name="" class="form-input" placeholder="Confirm password"
+                                    minlength="6" required>
+                                <img src="./asset/img/lock.svg" alt="" class="img-mess">
+                                <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                            </div>
+                            <p class="form-err">Password must be at least 6 characters</p>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="" id="checked-label-sign-up" hidden>
+                            <label for="checked-label-sign-up">Set as default card</label>
+                            <a href="#!" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn-sign-in">Sign In</button>
+                        <div class="signIn-gg">
+                            <img src="./asset/img/google.svg" alt="" class="gg">
+                            <p class="gg-desc">Sign in with Google</p>
+                        </div>
+
+                    </form>
+
+                    <p class="dont-SignIn">Don’t have an account yet? <a href="#!">Sign In</a></p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
-    <script>
-        var form_thanks = document.getElementById('js-form-contact')
-        // var main = document.querySelector('.grid-column-form')
-        var thanks = document.querySelector('.grid-colmun-thanks')
-
-        form_thanks.addEventListener('submit', function () {
-            form_thanks.classList.add('close')
-            thanks.classList.add('open')
-        })
-    </script>
-
-    <script>
-        var all = document.querySelector('.choise-all')
-        var veg = document.querySelector('.choise-veg')
-        var non = document.querySelector('.choise-non')
-        var js_all = document.querySelector('.js-all')
-        var js_veg = document.querySelector('.js-veg')
-
-        all.addEventListener('click', function () {
-
-            js_all.classList.remove('close')
-            js_veg.classList.add('close')
-        })
-        veg.addEventListener('click', function () {
-            js_veg.classList.remove('close')
-
-            js_all.classList.add('close')
-        })
-
-
-    </script>
-
-    <script src="./js/js.js"></script>
-
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

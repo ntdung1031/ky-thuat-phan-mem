@@ -150,3 +150,9 @@ margin: 0 20px;
 font-size: 1.6rem;
 line-height: 19px;
 }
+/* fix after checkbox */
+.form-check label::after {
+    top: 4px;
+}
+
+
