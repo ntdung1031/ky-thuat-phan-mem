@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhà hàng thái</title>
+    <!-- reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!--tailwindcss -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -14,8 +15,7 @@
     <link rel="stylesheet" href="./asset/css/menu.css">
     <link rel="stylesheet" href="./asset/css/reponsive.css">
     <link rel="icon" href="./asset/icon/244634107_658741508424648_8060967603275718931_n.ico" type="image/x-icon" />
-    <!-- icon font -->
-    <link rel="stylesheet" href="./asset/font/themify-icons-font/themify-icons/themify-icons.css">
+    <!-- icon fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -245,7 +245,7 @@
 
                 <a href="#grid-veg-body" class="choise-veg choise-menu-pri">Veg</a>
 
-                <a href="#grid-all-body" class="choise-non choise-menu-pri">Non-Veg</a>
+                <a href="#grid-none-body" class="choise-non choise-menu-pri">Non-Veg</a>
 
                 <a href="#" class="choise-takeout-link choise-menu-pri">Takeout
                     <svg style="margin-left: 6px;" width="20px" height="20px" viewBox="0 0 11 11" fill="none"
@@ -261,6 +261,7 @@
         </div>
 
         <div class="grid-lay grid-body">
+            <!-- all veg -->
             <div class="grid__row grid__row-pri-menu-body js-all" id="grid-all-body">
                 <div class="grid__column33 grid-menu-item mb-6 c-12">
                     <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu1.jpeg);"
@@ -504,6 +505,76 @@
 
 
             </div>
+            <!-- nonveg -->
+            <div class="grid__row grid__row-pri-menu-body js-none-veg close" id="grid-none-body">
+                <div class="grid__column33 grid-menu-item mb-6 c-12">
+                    <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu1.jpeg);"
+                        style="background-image: url(./asset/img-menu/menu1.jpeg);"></div>
+                    <div class="menu-container-text">
+                        <h1 class="menu-container-head">Chicken Tikka Masala</h1>
+                        <span class="menu-container-para">Chicken marinated with yogurt and spices then grilled in the
+                            tandoor and simmered in a robust creamy sauce of tomatoes and cream.</span>
+                        <span class="menu-container-price">$15.99</span>
+                    </div>
+
+
+                </div>
+                <div class="grid__column33 grid-menu-item mb-6 c-12">
+                    <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu2.jpeg);"></div>
+                    <div class="menu-container-text">
+                        <h1 class="menu-container-head">Lamb Vindaloo</h1>
+                        <span class="menu-container-para">Grass-fed lamb (halal) garlic, apple cider vinegar, red chili,
+                            curry sauce.</span>
+                        <span class="menu-container-price">$17.99</span>
+                    </div>
+
+
+                </div>
+                <div class="grid__column33 grid-menu-item mb-6 c-12">
+                    <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu3.jpeg);"></div>
+                    <div class="menu-container-text">
+                        <h1 class="menu-container-head">Chicken Coconut</h1>
+                        <span class="menu-container-para">Chicken, cucumber, basil, coconut curry sauce.</span>
+                        <span class="menu-container-price">$16.99</span>
+                    </div>
+                </div>
+                <div class="grid__column33 grid-menu-item mb-6 c-12">
+                    <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu4.jpeg);"></div>
+                    <div class="menu-container-text">
+                        <h1 class="menu-container-head">Goan Shrimp Curry</h1>
+                        <span class="menu-container-para">Shrimp marinated in tamarind puree and simmered in coconut
+                            cream with curry leaves, cucumber, jalapenos, onions, ginger garlic, and spices.</span>
+                        <span class="menu-container-price">$17.99</span>
+                    </div>
+                </div>
+                <div class="grid__column33 grid-menu-item mb-6 c-12">
+                    <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu13.jpeg);"></div>
+                    <div class="menu-container-text">
+                        <h1 class="menu-container-head">Choyla</h1>
+                        <span class="menu-container-para">Char-grilled chicken or Lamb ( for an additional $2 )
+                            smothered with a spicy paste of ginger, garlic, dried chilies, lemon, and oil. Served with
+                            Daal.</span>
+                        <span class="menu-container-price">$18.00</span>
+                    </div>
+
+
+                </div>
+                <div class="grid__column33 grid-menu-item mb-6 c-12">
+                    <div class="menu-container-img" style="background-image: url(./asset/img-menu/menu14.png);"></div>
+                    <div class="menu-container-text">
+                        <h1 class="menu-container-head">Goan Lamb Chilli</h1>
+                        <span class="menu-container-para">Grass-fed lamb (halal), bell peppers, onion, tomatoes, curry
+                            leaves, mustard seeds. Served with Daal.</span>
+                        <span class="menu-container-price">$20.00</span>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
         </div>
 
         <div class="footer-contact">
@@ -697,10 +768,13 @@
                                 <div class="grid-column-form ">
                                     <form action="" method="dialog" id="js-form-contact" class="form-end">
                                         <h1 class="contact-form-head">Email address</h1>
-                                        <input type="email" class="contact-form-mail"
-                                            placeholder="Email address goes here" required
-                                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-                                        <p class="error">Vui lòng nhập đúng email</p>
+                                        <div class="input-form-end">
+                                            <input type="email" class="contact-form-mail"
+                                                placeholder="Email address goes here" required
+                                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" />
+                                            <p class="error">Email is not in correct format</p>
+                                            <img src="./asset/img/form-error.svg" alt="" class="img-err">
+                                        </div>
                                         <input type="submit" value="sign up" class="contact-form-btn"></input>
 
                                     </form>
@@ -722,7 +796,7 @@
                     </div>
                     <div class="footer-section-right">DESIGNED
                         <a target="_blank" href="https://www.facebook.com/NTD.omg" class="section-right-link">
-                            BY DŨNG.
+                            BY TEAM
 
                         </a>
                         POWERED BY WEBFLOW.

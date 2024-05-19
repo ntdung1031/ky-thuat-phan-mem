@@ -1,13 +1,14 @@
 
 var all = document.querySelector('.choise-all')
 var veg = document.querySelector('.choise-veg')
-var non = document.querySelector('.choise-non')
+var choiseNone = document.querySelector('.choise-non')
 var js_all = document.querySelector('.js-all')
 var js_veg = document.querySelector('.js-veg')
-var choiseNone = document.querySelector('.choise-non')
+var noneveg = document.querySelector('.js-none-veg')
 all.addEventListener('click', function (e) {
     js_all.classList.remove('close')
     js_veg.classList.add('close')
+    noneveg.classList.add('close')
     Object.assign(all.style, {
         borderColor : 'var(--yelo-color)',
         color : 'var(--yelo-color)'
@@ -39,6 +40,7 @@ document.addEventListener('click',()=> {
 veg.addEventListener('click', function (e) {
     js_veg.classList.remove('close')
     js_all.classList.add('close')
+    noneveg.classList.add('close')
     Object.assign(veg.style, {
         borderColor : 'var(--yelo-color)',
         color : 'var(--yelo-color)'
@@ -54,7 +56,8 @@ veg.addEventListener('click', function (e) {
     e.stopPropagation()
 })
 choiseNone.addEventListener('click', (e) => {
-    js_all.classList.remove('close')
+    noneveg.classList.remove('close')
+    js_all.classList.add('close')
     js_veg.classList.add('close')
     Object.assign(choiseNone.style, {
         borderColor : 'var(--yelo-color)',

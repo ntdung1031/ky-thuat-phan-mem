@@ -12,6 +12,7 @@
 * {
 box-sizing: inherit;
 -webkit-tap-highlight-color: transparent;
+user-select: none;  
 }
 html {
     overflow-x: hidden;
@@ -21,6 +22,7 @@ html {
     font-family: "gstatic",sans-serif;
     box-sizing: border-box;
    background-color: var(--bg-color);   
+
 }
 .header .grid-lay {
     max-width: calc(100% - 20px);
@@ -66,15 +68,17 @@ html {
 }
 /* sign btn */
 .sign button {
-    font-size: 2rem;
+    font-size: 1.9rem;
     padding: 11.5px 14px;
     line-height: 17px;
     border-radius: 10px;
+    font-weight: 600;
 }
 .sign-in {
 }
 .sign-up {
     background-color: var(--yelo-color);
+    color: var(--color-pri);
 }
 .sign-up:hover {
     opacity: 0.8;
@@ -186,10 +190,6 @@ html {
 .group-form:has(.form-input:invalid:not(:placeholder-shown)) .form-err {
     display: block;
 }
-/* .form .group-form:has(:invalid):has(.form-input:invalid) .form-err{ 
-    display: block;
-
-} */
 
 .form-err {
     display: none;   
@@ -255,12 +255,11 @@ html {
     font-size: 1.8rem;
     border-radius: 8px;
     margin-top: 16px;
-    /* user-select: none;
-    opacity: 0.8;   */
+    transition: opacity linear 0.3s;
 }
 .group-form:has(.form-input:invalid) ~ .btn-sign-in {
     user-select: none;
-    opacity: 0.8;  
+    opacity: 0.7;  
     pointer-events: none;
 
 }

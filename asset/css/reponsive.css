@@ -1319,11 +1319,9 @@ height: 240px;
     .img-info-shar {
         padding: 0 25%;
     width: 50%;
-    width: 300px;
+    height: 300px;
     }
-    .img-info1-pri {
-        height: 365px;
-    }
+   
     .close {
         display: none;
     }
@@ -1369,6 +1367,9 @@ height: 240px;
 @media (min-width:63.9375em) and (max-width:76.4375em) {
     .nav-logo-img {
         width: 240px;
+    }
+    .nav-head-link {
+        font-size: 1.9rem;
     }
 }
 

@@ -21,6 +21,7 @@
     display: none;
     z-index: 2;
     transition: transform linear 0.2s, border-color linear .3s, right linear 0.3s ;
+    cursor: pointer;
 }
 .input-menu-header {
     height: 100%;
@@ -390,6 +391,7 @@ display: flex;
     flex-direction: column;
     line-height: 22px;
     width:50%;
+    gap: 4px;
     align-items: flex-start;
     padding: 12px 0 15.9px 17px;;
     border-top-right-radius: 10px;
@@ -439,7 +441,7 @@ color: var(--color-pri);
     color: #48292d;
     font-size: 2rem;
     font-weight: 300;
-    margin: 12px 0 20px 0 ;
+    margin: auto 0 20px 0 ;
     transition: all linear 0.2s;
 }
 .lot-info-link-btn:hover {
@@ -872,6 +874,7 @@ text-transform: uppercase;
 color: #333;
 border-bottom: 1px solid var(--color-pri);
 padding-bottom: 22px;
+text-align: center;
 }
 .grid-column-form {
 width: 100%;
@@ -895,9 +898,17 @@ width: 100%;
 height: 60px;
 font-size: 1.8rem;
 padding: 8px 12px;
-/* outline: none; */
 border-radius: 12px;
 border: none;
+}
+.input-form-end {
+    position: relative;
+
+}
+.input-form-end .img-err {
+    right: 13px;
+    position: absolute;
+    top: 21px;
 }
 .contact-form-mail:focus {
     border: 1px solid #3898ec;
@@ -907,9 +918,11 @@ border: none;
     border: 1px solid red;
     outline: none;
 }
-.form-end:has(:invalid:not(:placeholder-shown)) .error {
+.form-end:has(:invalid:not(:placeholder-shown)) .error,
+.form-end:has(:invalid:not(:placeholder-shown)) .img-err {
     display: block;
 }
+
 .contact-form-btn {
 width: 100%;
 height: 50px;
@@ -920,17 +933,22 @@ font-size: 2.4rem;
 border-radius: 30px ;
 color: #fff;
 cursor: pointer;
-
+transition: opacity linear .5s;
+}
+.form-end:has(.contact-form-mail:invalid) .contact-form-btn {
+    opacity: 0.7;
+    pointer-events: none;
 }
 
 .grid-colmun-thanks {
     text-align: center;
     font-size: 3.2rem;
     line-height: 50px;
-    padding: 25px 38px;
+    padding: 20px 38px;
     display: none;
     animation: fadeIn linear 1s;
-    font-weight: 600;
+    font-weight: 800;
+    color: var(--yelo-color);
 }
 .footer-section {
     display: flex;
