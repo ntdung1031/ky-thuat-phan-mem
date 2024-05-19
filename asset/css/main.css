@@ -88,7 +88,9 @@
 .nav-head-link:hover  {
     color: var(--color-pri);
 }
-
+.nav-head-link label {
+    cursor: pointer;
+}
 .nav-head-link {
     text-decoration: none;
     font-size: 2rem;
@@ -96,9 +98,9 @@
     color: var(--text-color);
     -webkit-tap-highlight-color: transparent;
 }
-/* .nav-head-item-primary {
-    color:var(--color-pri);
-} */
+.nav-head-link-color-pri {
+    color: var(--color-pri);
+}
 .nav-head-item-order {
     border: 2px solid var(--color-pri);
     border-radius: 20px;
