@@ -85,8 +85,8 @@ z-index: 1;
 }
 .choise-menu-pri:hover {
     cursor: pointer;
-    border-color: var(--yelo-color);
-    color: var(--yelo-color);
+    border-color: var(--yelo-color) !important;
+    color: var(--yelo-color) !important;
 }
 .choise-menu-pri:hover svg {
     filter: brightness(0) saturate(100%) invert(80%) sepia(70%) saturate(815%) hue-rotate(328deg) brightness(101%) contrast(91%);

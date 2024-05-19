@@ -946,11 +946,12 @@ cursor: pointer;
     color: var(--bg-color);
     padding: 0 12px;
     transition: all linear 0.3s;
+    display: inline-block;
 }
 .section-right-link:hover  {
     color: #48292d;
-    font-weight: 400;
-
+    font-weight: 500;
+    translate: 0 -4px;
 }
 .modal {
     

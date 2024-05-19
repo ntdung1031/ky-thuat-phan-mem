@@ -46,14 +46,11 @@
         padding: 11.5px 20px !important;
         height: 50px;
     }
-    /* .nav-link-logo {
-        order: 1;
-    } */
     .sign-in {
         display: none;
     }
     .nav-link-logo {
-        margin: 0;
+        margin-left: 6px;
     }
     .close-form {
         padding: 5px;
