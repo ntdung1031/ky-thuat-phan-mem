@@ -1319,6 +1319,10 @@ height: 240px;
     .img-info-shar {
         padding: 0 25%;
     width: 50%;
+    width: 300px;
+    }
+    .img-info1-pri {
+        height: 365px;
     }
     .close {
         display: none;
