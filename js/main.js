@@ -64,14 +64,14 @@ closeForm[1].addEventListener('click', () => {
 })
 //  page user
 
-var btnUser = document.getElementsByClassName('btn-sign-in')
-console.log(btnUser)
+// var btnUser = document.getElementsByClassName('btn-sign-in')
+// console.log(btnUser)
 
-for(let i of btnUser) {
-    i.addEventListener('click',() => {
-        window.location.href = "user.html";
-    })
-}
+// for(let i of btnUser) {
+//     i.addEventListener('click',() => {
+//         window.location.href = "user.html";
+//     })
+// }
 
 
 

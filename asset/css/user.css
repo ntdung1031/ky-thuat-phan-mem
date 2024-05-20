@@ -179,8 +179,11 @@ body {
 }
 .prod-preview-img {
     width: 365px;
+    height: 270px;
     border: 2px solid var(--yelo-color);
     border-radius: 20px;
+    /* animation: fade linear 0.3s; */
+    transition: all linear 0.3s;
 }
 .prod-preview-thum {
     display: flex;
@@ -195,16 +198,15 @@ body {
     border-radius: 12px;
     cursor: pointer;
     transition: all linear 0.2s;
+    
 }
 .prod-preview-thum-item:hover {
-    box-shadow: var(--yelo-color) 0px 0px 9px 0px;
-    border: 2px solid var(--yelo-color);
+    box-shadow: var(--yelo-color) 0px 0px 9px 0px !important;
+    border: 2px solid var(--yelo-color) !important;
 }
 .prod-preview-thum-item:first-child {
-    border: 1px solid var(--yelo-color);
+    border: 2px solid var(--yelo-color);
     box-shadow: var(--yelo-color) 0px 0px 9px 0px;
-    cursor: default; 
-
 }
 .form-prod {
     background-color: #f9f0d6;
@@ -445,6 +447,15 @@ body {
             min-width: unset;
             min-height: 540px;
         }
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
