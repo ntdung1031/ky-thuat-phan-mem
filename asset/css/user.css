@@ -55,7 +55,8 @@ body {
     cursor: default;
     z-index: 2;
     display: none;
-    animation: fadeIn linear 0.3s;
+    animation: growths linear 0.3s;
+    transform-origin: calc(100% - 80px) top;
 }
 .dropdown-top {
     margin-bottom: 20px;
@@ -145,6 +146,9 @@ body {
     font-size: 1.8rem;
     border-radius: 12px;
     line-height: 20px;
+}
+.btn-check:hover {
+    opacity: 0.8;
 }
 .dropdown-bottom-row span{
     font-size: 1.8rem;
@@ -262,6 +266,9 @@ body {
     font-size: 1.5rem;
     color: var(--text-color);
 }
+.prod-tag-info:hover {
+    opacity: 0.8;
+}
 .prod-prop {
     display: flex;
     gap: 20px;
@@ -313,6 +320,9 @@ body {
     border-radius: 8px;
     height: 46px;
     width: 75%;
+}
+.prod-btn-add button:first-child:hover {
+    opacity: 0.8;
 }
 .prod-btn-add button:last-child {
     padding: 10px;

@@ -764,23 +764,21 @@ justify-content: center;
     align-items: center;
     justify-content: center;
     -webkit-tap-highlight-color: transparent;
+    filter: grayscale(1);
+    transition: all linear 0.3s;
 }
+
 .footer-icon-link-fb {
     margin-right: 8px;
 }
-.footer-icon-link:hover .icon-fb {
-    padding:  0 0 0 3px;
+.footer-icon-link:hover {
+    filter: grayscale(0);
 }
-.icon-fb {
-    padding:  0;
-    transition: padding linear 0.3s;
-}
-.icon-inta {
-    transition: padding linear 0.3s;
-    padding: 0;
-}
+.footer-icon-link:hover .icon-fb,
 .footer-icon-link:hover .icon-inta {
-    padding:  0 0 0 3px;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(59%) saturate(7041%) hue-rotate(328deg) brightness(90%) contrast(102%);
+    animation: shake linear 0.3s;
+
 }
 
 

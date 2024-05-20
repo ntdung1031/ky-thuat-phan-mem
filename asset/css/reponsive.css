@@ -10,11 +10,13 @@
     .upcoming-main-body::-webkit-scrollbar-thumb {
         background-color: rgba(166, 165, 165,0.2);
         border-radius: 10px;
-        
       }
     .img-info-shar {
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
+    }
+    .food-info-23 {
+        margin-bottom: 20px !important;
     }
     .about-iner-head {
         margin: 16px 0 10px 0;
@@ -540,7 +542,16 @@
     .contact-form-mail {
         height: 50px;
     }
-
+    .btn-direction-btn {
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+    .case-dot-all {
+        width:  18px;
+        height: 18px;
+        right: 40px
+    }
 
     /*  btn */
     .btn-event  {
@@ -1208,7 +1219,7 @@ height: 240px;
     display: block;
 }
 }
-/* tablet and mobi  */
+
 
 /* pc */
  @media (min-width:64em) {
@@ -1387,6 +1398,15 @@ height: 240px;
     }
     .nav-head-link {
         font-size: 1.9rem;
+    }
+}
+/* tablet to 1280px */
+@media (min-width:63.9375em) and (max-width:80em) {
+    .contact-column {
+        width: 90%;
+    }
+    .grid-column-formmain {
+        width: 100%;
     }
 }
 
