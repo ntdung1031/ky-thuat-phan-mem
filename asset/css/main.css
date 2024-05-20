@@ -442,7 +442,7 @@ color: var(--color-pri);
     border-radius: 40px;
     color: #48292d;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     margin: auto 0 20px 0 ;
     transition: all linear 0.2s;
 }

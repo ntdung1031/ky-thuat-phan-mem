@@ -62,8 +62,16 @@ closeForm[1].addEventListener('click', () => {
     modal[1].style.display = 'none'
     html.style.overflow = 'unset';
 })
+//  page user
 
+var btnUser = document.getElementsByClassName('btn-sign-in')
+console.log(btnUser)
 
+for(let i of btnUser) {
+    i.addEventListener('click',() => {
+        window.location.href = "user.html";
+    })
+}
 
 
 

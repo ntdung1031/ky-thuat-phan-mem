@@ -32,7 +32,7 @@ html {
 }
 .grid-lay {
     width: 1400px;
-    max-width: 100%;
+    max-width: calc(100% - 20px);
     margin: 0 auto;
 }
 .grid__row {

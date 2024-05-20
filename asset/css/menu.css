@@ -27,7 +27,7 @@ align-items: center;
 }
 .body-head-menu-container {
     display: flex;
-    grid-column-gap: 40px;
+    grid-column-gap: 30px;
     justify-content: space-between;
     
 
@@ -45,7 +45,7 @@ align-items: center;
 .head-menu-container-text {
     font-size: 1.8rem;
     margin-left: 12px;
-    font-weight: 900;
+    font-weight: 700;
 
 }
 /* menu-choise */
@@ -123,6 +123,11 @@ align-items: center;
     background-color: var(--bg-color);
     padding: 0 9px;
     margin-bottom: 20px;
+}
+.grid-menu-item > a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .menu-container-img {
     background-repeat: no-repeat;
