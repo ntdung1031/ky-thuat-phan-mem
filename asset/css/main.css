@@ -387,6 +387,7 @@ display: flex;
     height: 100%;
 }
 .lot-info {
+    max-height: 300px;
     background-color: white;
     padding: 30px 22px;
     display: flex;
